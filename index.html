@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set a page title -->
+    <title>Weather</title>
+
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="css/tachyons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+  	<div id="gifbg">
+    	<img src="image/background.gif" alt="background image" style="position:fixed;top:0px;left:0px;width:100%;height:103%;z-index:-1;">
+         <!-- Search Box -->
+              <form id="location-search" class="pa4 formdiv">
+
+                <h1 class= "flex flex-wrap items-baseline" style="width: 100%;text-align:center;display:block">
+                	Wheather for (City) </h1>
+
+              <div id="searchcity">  <img src="image/searchicon.png" style="width:22px;height:22px;" >
+                &nbsp;
+                 <input type="text" id="area" value="" class="flex-auto">
+            </div>
+            </form>
+    </div>
+
+  	<div id="weatherdiv" class="hide">
+        <div class="bg" id="bg">
+
+        </div>
+
+        <div class="content">
+            <div class="weather-bg">
+                <img src="image/bg4.png" >
+            </div>
+
+            <div class="sans-serif">
+
+              <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+              <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
+                Sorry, we couldn't find that city.
+              </div>
+
+
+
+              <!-- Content -->
+              <!-- <div class="flex flex-wrap pa4">
+                <div class="w-100 w-50-m w-third-l">
+                  <h2>Location</h2>
+                  <p>City: <span id="location-name"></span></p>
+                  <p>Country: <span id="country"></span></p>
+                </div>
+
+                <div class="w-100 w-50-m w-third-l">
+                  <h2>Temperature</h2>
+                  <p>Current Temp: <span id="temp"></span></p>
+                  <p>Max Temp: <span id="temp-max"></span></p>
+                  <p>Min Temp: <span id="temp-min"></span></p>
+                </div>
+
+                <div class="w-100 w-50-m w-third-l">
+                  <h2>Weather</h2>
+                  <p>Condition: <span id="condition"></span></p>
+                  <p>Desription: <span id="condition-description"></span></p>
+                  <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+                </div>
+              </div> -->
+                <div class="flex flex-wrap pa4 weather-content">
+                  <div class="w-100 w-50-m w-third-l weather-country">
+                    <div id="location-name"></div>
+                    <div id="country"></div> <br> <br><br>
+                    <div id="monday"></div>
+                    <div id="datespan"></div>
+                    <div id="wind-speed"></div>
+                  </div>
+                  <div id="weather-clute">
+
+                  </div>
+                  <div>
+                      <span id="temp"></span>
+                  </div>
+                  <div class="w-100 w-50-m w-third-l weather-temp">
+
+                    <span id="temp-min"></span>
+                    <span id="temp-max"></span>
+                  </div>
+               <!--
+                  <div class="w-100 w-50-m w-third-l weather-speed">
+                    <h2>Weather</h2>
+                    <p>Condition: <span id="condition"></span></p>
+                    <p>Desription: <span id="condition-description"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+                  </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Site JavaScript -->
+    <script src="javascript/toggleClass.js" charset="utf-8"></script>
+    <script src="javascript/main.js" charset="utf-8"></script>
+    <script src="javascript/weather.js" charset="utf-8"></script>
+  </body>
+</html>

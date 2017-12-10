@@ -1,0 +1,111 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+	body{
+	 	margin: 0px;
+	 	padding:0px;
+	}
+
+  .custom {
+  cursor: url('image/mouse.gif'), auto;
+  }
+
+	.weather-bg{
+	 		width: 100%;
+	 		text-align: center;
+	}
+	.weather-bg img{
+	  	width: 10s0%;
+	  	margin: 0 auto;
+	}
+	.sans-serif{
+	 	position: absolute;
+	  	top:10%;
+	  	left: 0;
+	  	width: 100%;
+	}
+	.bg img{
+	  	width: 100%;
+	}
+	.content{
+		position: absolute;
+	  	top:0;
+	  	left: 0;
+	  	right: 0;
+	}
+	.weather-content{
+		width: 100%;
+		padding:10% 25%;
+	}
+	.weather-country{
+		position: absolute;
+		top:30%;
+		width: 40%;
+		/*text-align: center;*/
+		text-indent: 1em;
+		font-size: 130%;
+		color: #fff;
+	}
+
+  h1 {
+      font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+      text-indent: 1em;
+      font-size: 32px;}
+
+	#location-name,#country{
+		font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-variant: normal;
+    top:20%; margin-left: 18%;
+	}
+
+	#monday,#datespan,#wind-speed{
+		    font-family: monospace；
+		    font-size: 12px;
+		    color: rgba(255, 255, 255, 0.78);
+        margin-left: 18%;
+        text-indent: 1em;
+	}
+
+	#weather-clute img{
+		position: absolute;
+	    top: 52%;
+	    left: 43%;
+		width:10%;
+	}
+
+	#temp{
+		position: absolute;
+	    top: 45%;
+	    font-size: 300%;
+	    font-family: fantasy;
+	    color: #fff;
+	    left: 57%;
+	}
+	.weather-temp{
+		position: absolute;
+	    top: 76%;
+	    font-size: 140%;
+	    color: #fff;
+	    left: 53%;
+	    width: 20%;
+	    font-family: monospace;
+	}
+
+	.show{
+		display:block;
+	}
+	.hide{
+		display:none;
+	}
+	.formdiv{
+		position: absolute;
+		top: 20%;
+		color: #fff;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
